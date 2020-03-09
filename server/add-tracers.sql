@@ -1,0 +1,1 @@
+create table tracers (ID int(11) not null, Owner_ID int(11), Equipment_ID int(11), primary key (ID), foreign key (Owner_ID) references people(ID), foreign key (Equipment_ID) references equipment(ID));
